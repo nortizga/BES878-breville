@@ -1,0 +1,12 @@
+
+<h3> </h3>
+<ul class="list-unstyled">
+{% for post in collections.posts %}
+<li>
+    <h3>{{ post.data.title }}</h3>
+    <p>{{ post.data.description }}</p>
+    {%if post.data.site %}<a href="{{post.data.site}}">Website</a>{% endif %}
+    {%if post.data.github %}<a href="https://github.com/{{post.data.github}}">Repository</a>{% endif %}
+</li>
+{% endfor %}
+</ul>

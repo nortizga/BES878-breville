@@ -1,0 +1,50 @@
+---
+layout: 'base.njk'
+img: 
+      src: images/nicole-page.jpg
+      alt: Picture of Nicole Page
+      width: 150px
+      height: 150px
+
+profile: 
+      name: Hey, I'm Nicole 
+      shortDescription: I am a front-end web developer focusing on bringing creative designs to life on the web.
+      tools: • HTML - CSS - JavaScript - Vue - 11ty •
+      longDescription: I enjoy translating designs into responsive, interactive experiences in HTML, CSS, and JavaScript with semantic and accessible code.  I have a passion of continuous learning of both technical and soft skills to improve my ability to deliver meaningful solutions.
+      interests: Offline, I enjoy running, taking care of my plants and practicing latte art with my home espresso machine.
+templateEngineOverride: njk,md
+---
+<style>
+ .profile img {
+    place-self: center;
+    border: 2px dashed #b300b3; 
+ }
+
+ .profile p {
+      max-width: 50ch;
+ }
+</style>
+
+<header class="hero">
+<div class="container">
+<div class="profile">
+<img src="{{ img.src }}" alt="{{ img.alt }}}" witdh="{{ img.width }}" height="{{ img.height }}" />
+<h1>{{ profile.name }}</h1>
+<blockquote> 
+      <p>{{ profile.shortDescription }} </p>
+      <small>{{ profile.tools}}</small>
+</blockquote>
+</div>
+</div>
+</div>
+</header>
+
+<main class="container">
+<section>
+<p>{{ profile.longDescription }}</p>
+<p>{{ profile.interests }}</p>
+{% include "postlist.njk" %}
+</section>
+</main>
+
+

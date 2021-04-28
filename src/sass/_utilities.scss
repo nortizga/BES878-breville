@@ -1,0 +1,31 @@
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.mb-none {
+  margin-bottom: 0;
+}
+
+$alignments: left, center, right !default;
+
+@each $alignment in $alignments {
+  .text-align--#{$alignment} {
+    text-align: #{$alignment};
+
+    @if ($alignment == 'center') {
+      > a {
+        align-self: center !important;
+      }
+    }
+  }
+}
+
+.list {
+  display: inline-flex;
+  &--inline {
+    > li:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}

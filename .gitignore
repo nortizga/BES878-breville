@@ -1,0 +1,16 @@
+# dependencies installed by npm
+node_modules
+
+# build artefacts
+public
+src/css
+
+# secrets and errors
+.env
+
+# macOS related files
+.DS_Store
+
+#IDE
+.vscode
+

@@ -1,0 +1,69 @@
+h1 {
+  font-size: $h1-font-size;
+  font-size: unquote('min(max(2rem, 5vw), #{$h1-font-size})');
+}
+
+h1 + blockquote {
+  font-size: $text-font-size;
+  margin: 0;
+  padding-left: 1.25rem;
+  padding-top: 2vh;
+  position: relative;
+}
+
+blockquote {
+  &::before {
+    border-color: $color-on-primary;
+    transform: translateY(-0.25rem);
+  }
+
+  &::after {
+    border-color: $color-secondary;
+    transform: rotate(12deg);
+  }
+}
+
+blockquote::before,
+blockquote::after {
+  content: ' ';
+  border-left-style: dashed;
+  position: absolute;
+  top: 2vh;
+  left: 0;
+  bottom: 0;
+  mix-blend-mode: darken;
+}
+
+.list-unstyled {
+  list-style: none;
+  padding: 0;
+}
+
+small {
+  display: inline-block;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: $color-secondary;
+}
+
+section {
+  > ul {
+    > li + li {
+      margin-top: 2rem;
+    }
+  }
+
+  * {
+    a + a {
+      margin-left: 1rem;
+    }
+  }
+  > p {
+    margin: 0 0 1rem;
+  }
+}

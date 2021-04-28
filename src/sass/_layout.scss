@@ -1,0 +1,26 @@
+body {
+  min-height: 100vh;
+  font-family: $font-family;
+  font-size: $text-font-size;
+  background: $color-background;
+  color: $color-on-primary;
+}
+
+.hero {
+  background: $color-primary;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 50rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1.5rem;
+}
+
+.footer {
+  border-top: 1px solid gray;
+  padding-top: 2rem;
+}
