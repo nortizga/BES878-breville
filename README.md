@@ -1,19 +1,13 @@
-# nicolecodes.com
+# Breville-BES878
 
-> I am a front-end web developer focusing on bringing creative designs to life on the web. • HTML - CSS - JavaScript - Vue - 11ty •
+A simple site to quickly access the instructions of my home espresso machine. Built with 11ty.
 
-I enjoy translating designs into responsive, interactive experiences in HTML, CSS, and JavaScript with semantic and accessible code. I have a passion of continuous learning of both technical and soft skills to improve my ability to deliver meaningful solutions.
+> Machine: the Barista Pro • Breville (BES878)
 
-Offline, I enjoy running, taking care of my plants and practicing latte art with my home espresso machine.
+**Setup:**
 
----
-
-## Running the Website Locally
-
-1. Clone this GitHub repo
-
-2. Once cloned, run **`npm install`** to install 11ty and other dependencies.
-
-3. **`npm start`**
-
-   > Run 11ty with hot reload at localhost:8080 and sass in watch mode
+1. Fork, clone or download
+2. `cd` into the root folder
+3. run `npm install`
+4. run `npm run serve`
+5. open a browser and go to `http://localhost:8080`

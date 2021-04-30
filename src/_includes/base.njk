@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-{%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
+{%- set pageTitle %}{{ meta.siteName }}{% endset -%}
 {%- set pageDescription %}{{ meta.siteDescription }}{% endset -%}
 <head>
-{% include 'meta.njk' %}
+{% include 'head.njk' %}
 </head>
 <body>
-    {{ content | safe }}
-    {% include 'footer.njk' %}
+    <main class="container">
+        {% include 'sitenav.njk' %}
+        <h1>{{ description.title }}</h1>
+        <small class="subheading">{{ description.subtitle }}</small>
+        {{ content | safe }}
+    </main>
+    {% include 'footer.njk' %} 
 </body>
 </html>
