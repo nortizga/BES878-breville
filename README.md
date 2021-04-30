@@ -1,8 +1,8 @@
 # Breville-BES878
 
-A simple site to quickly access the instructions of my home espresso machine. Built with 11ty.
+A simple site to quickly access the care & cleaning instructions of my home espresso machine. Built with 11ty.
 
-> Machine: the Barista Pro • Breville (BES878)
+> espresso machine: the Barista Pro • Breville (BES878)
 
 **Setup:**
 
